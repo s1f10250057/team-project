@@ -42,3 +42,42 @@ background-color: #333;
 color: #fff;
 margin-top: 20px;
 }
+.sidebar {
+width: 200px; /* サイドバーの幅 */
+background-color: #333;
+color: #fff;
+padding: 20px;
+box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+height: 100vh; /* ビューポートの高さ全体 */
+position: sticky; /* スクロールしても固定されるようにする */
+top: 0; /* 上部に固定 */
+overflow-y: auto; /* 内容が多い場合にスクロールできるようにする */
+}
+
+.sidebar h2 {
+color: #fff;
+text-align: center;
+margin-bottom: 20px;
+}
+
+.sidebar ul {
+list-style: none;
+padding: 0;
+}
+
+.sidebar ul li {
+margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+display: block; /* リンク全体をクリック可能にする */
+color: #fff;
+text-decoration: none;
+padding: 10px 15px;
+border-radius: 4px;
+transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+background-color: #575757;
+}
