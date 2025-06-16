@@ -29,7 +29,8 @@ padding: 10px 0;
 display: inline-block;
 }
 .container {
-width: 80%;
+width: 100%;
+max-width:800px;
 margin: 20px auto;
 padding: 20px;
 background-color: #fff;
