@@ -44,18 +44,18 @@ color: #fff;
 margin-top: 20px;
 }
 .sidebar {
-width: 200px; /* サイドバーの幅 */
+width: 200px; 
 background-color: #333;
 color: #fff;
 padding: 20px;
 box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-height: 100vh; /* ビューポートの高さ全体 */
-position: fixed; /* 固定で配置 */
+height: 100vh; 
+position: fixed; 
 top: 0;
-left: 0; /* 左端に配置 */
+left: 0; 
 overflow-y: auto;
 transition: width 0.3s ease, padding 0.3s ease, transform 0.3s ease; /* アニメーションを追加 */
-z-index: 1000; /* 他の要素の上に表示 */
+z-index: 1000; 
 
 }
 
