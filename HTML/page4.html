@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <link rel="stylesheet"  href="page4.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/page4.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akito's recommend spot</title>
 </head>
 <body>
-    <header>
-        <h1></h1>
-    </header>
-    <div class="sidebar">
+    <button class="openbtn" onclick="toggleSidebar()">☰ メニュー</button>
+    <div class="sidebar" id="mySidebar">
         <h2>メニュー</h2>
         <ul>
             <li><a href="../index.html">index</a></li>
@@ -20,5 +18,23 @@
             <li><a href="page3.html">Page3</a></li>
         </ul>
     </div>
+    <main>
+        <header>
+            <h1>Akito's recommend spot</h1>
+        </header>
+        <h2>Akito's recommend spot</h2>
+        <p>ここでは、Akitoが特におすすめするスポットを紹介します。</p>
+        <ul>
+            <li>スポット1: 美しい自然の景色</li>
+            <li>スポット2: 歴史的な建物</li>
+            <li>スポット3: 地元の美味しい料理</li>
+        </ul>
+    </main>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('mySidebar');
+            sidebar.classList.toggle('open');
+        }
+    </script>
 </body>
 </html>
