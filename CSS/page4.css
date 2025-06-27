@@ -100,14 +100,14 @@ background-color: #575757;
             transition: 0.3s;
             padding-top: 60px;
             color: #fff;
-        }
-        .sidebar.open {
+}
+.sidebar.open {
             width: 200px;
-        }
-        .sidebar h2, .sidebar ul, .sidebar li, .sidebar a {
+}
+.sidebar h2, .sidebar ul, .sidebar li, .sidebar a {
             color: #fff;
-        }
-        .openbtn {
+}
+.openbtn {
             font-size: 20px;
             cursor: pointer;
             background-color: #333;
@@ -118,11 +118,11 @@ background-color: #575757;
             top: 20px;
             left: 20px;
             z-index: 2;
-        }
-        main {
+}
+main {
             margin-left: 0;
             transition: margin-left 0.3s;
-        }
-        .sidebar.open ~ main {
+}
+.sidebar.open ~ main {
             margin-left: 250px;
-        }
+}
