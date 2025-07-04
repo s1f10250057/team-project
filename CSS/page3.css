@@ -1,88 +1,85 @@
 body {
-font-family: sans-serif;
-margin: 0;
-padding: 0;
-background-color: #f4f4f4;
-color: #333;
+    font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f9f0;
+    color: #333;
 }
+
 header {
-background-color: #333;
-color: #fff;
-padding: 1em 0;
-text-align: center;
-}
-nav ul {
-list-style: none;
-padding: 0;
-text-align: center;
-background-color: #eee;
-margin: 0;
-}
-nav ul li {
-display: inline;
-margin: 0 15px;
-}
-nav ul li a {
-text-decoration: none;
-color: #333;
-padding: 10px 0;
-display: inline-block;
-}
-.container {
-width: 100%;
-max-width:800px;
-margin: 20px auto;
-padding: 20px;
-background-color: #fff;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-footer {
-text-align: center;
-padding: 20px;
-background-color: #333;
-color: #fff;
-margin-top: 20px;
-}
-.sidebar {
-width: 200px; 
-background-color: #333;
-color: #fff;
-padding: 20px;
-box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-height: 100vh; 
-position: fixed; 
-top: 0;
-left: 0; 
-overflow-y: auto;
-transition: width 0.3s ease, padding 0.3s ease, transform 0.3s ease; /* アニメーションを追加 */
-z-index: 1000; 
-
+    background: linear-gradient(90deg, #a8e6cf, #dcedc1);
+    text-align: center;
+    padding: 1em 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.sidebar h2 {
-color: #fff;
-text-align: center;
-margin-bottom: 20px;
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #2e7d32;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px #fff;
 }
 
-.sidebar ul {
-list-style: none;
-padding: 0;
+header h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #558b2f;
 }
 
-.sidebar ul li {
-margin-bottom: 10px;
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    line-height: 1.8;
 }
 
-.sidebar ul li a {
-display: block; /* リンク全体をクリック可能にする */
-color: #fff;
-text-decoration: none;
-padding: 10px 15px;
-border-radius: 4px;
-transition: background-color 0.3s ease;
+.content h3 {
+    color: #4caf50;
+    border-left: 5px solid #a5d6a7;
+    padding-left: 10px;
+    margin-top: 30px;
 }
 
-.sidebar ul li a:hover {
-background-color: #575757;
+.content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.content ul li {
+    padding: 8px;
+    background: #e8f5e9;
+    margin: 5px 0;
+    border-radius: 8px;
+    position: relative;
+}
+
+.content ul li::before {
+    content: "🌳";
+    margin-right: 8px;
+}
+
+.content img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin: 10px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #fff;
+    background: #81c784;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+}
+
+a:hover {
+    background: #66bb6a;
 }
