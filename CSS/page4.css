@@ -7,11 +7,7 @@ color: #333;
 }
 
 header {
-background-color: #333;
-color: #35A3F3;
-margin: 20px 0;
-text-align: center;
-font-size: 50px;
+    text-align: center;
 }
 
 nav ul {
@@ -127,5 +123,8 @@ main {
 .sidebar.open ~ main {
             margin-left: 250px;
 }
-h2 {
-font-size: 24px;}
+
+button {
+    width: 150px;
+    height: 50px;
+}
