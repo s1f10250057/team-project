@@ -13,14 +13,150 @@ padding: 1em 0;
 text-align: center;
 }
 p{font-size: 18px;
-
 }
 
+h1{
+    margin: 0;
+    font-size: 2.5em;
+}
 h3{font-size: 24px;
     text-decoration: underline;
 }
 
+main{
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
 
+.intro p{
+    font-size: 1.1em;
+    color: #555;
+}
+.spot-section {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.spot-section h2 {
+    color: #e62020;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.spot-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.spot-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    padding-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.spot-card:hover {
+    transform: translateY(-5px);
+}
+
+.spot-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.spot-card h3 {
+    color: #333;
+    font-size: 1.4em;
+    margin: 10px 0;
+    padding: 0 15px;
+}
+
+.spot-card p {
+    font-size: 0.95em;
+    color: #666;
+    padding: 0 15px;
+}
+
+/* Googleマップセクション */
+.google-map-section {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.google-map-section h2 {
+    color: #e62020;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.google-map-section p {
+    margin-bottom: 25px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.map-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 アスペクト比 */
+    height: 0;
+    overflow: hidden;
+    background-color: #eee; /* マップ読み込み中の背景色 */
+    border-radius: 8px;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 8px;
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .spot-section h2, .google-map-section h2 {
+        font-size: 1.8em;
+    }
+
+    .spot-container {
+        grid-template-columns: 1fr; /* 1列表示 */
+    }
+
+    .spot-card img {
+        height: 250px; /* スマートフォンでの画像の高さを調整 */
+    }
+}
 nav ul {
 list-style: none;
 padding: 0;
